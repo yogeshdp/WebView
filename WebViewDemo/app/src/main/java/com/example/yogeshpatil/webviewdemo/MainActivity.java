@@ -15,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
         webView = (WebView) findViewById(R.id.webView);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("http://www.google.com");
+        //webView.loadUrl("http://www.google.com");
+        webView.loadData("<html><body><h1>this is my website</></body></html>","text/html","UTF-8");
     }
 
 
